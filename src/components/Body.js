@@ -4,7 +4,7 @@ import BodyChildTwo from './BodyChildTwo'
 
 export default function Body({number, counting, setShow, list}){
     //you can destructure it ({number}) or you can do props (props) in the parameter
-
+// console.log(list)
     
 
     return(
