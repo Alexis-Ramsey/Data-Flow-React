@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderChild from './HeaderChild'
 import HeaderChildTwo from './HeaderChildTwo'
 
-export default function Header(){
+export default function Header({show, setList, list}){
 
     return(
         <div className="container">
@@ -14,7 +14,7 @@ export default function Header(){
                     <HeaderChild />
                 </div>
                 <div className="col-sm-6">
-                    <HeaderChildTwo />
+                    <HeaderChildTwo show={show} setList={setList} list={list}/>
                 </div>
             </div>
 

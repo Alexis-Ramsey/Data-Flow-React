@@ -2,7 +2,7 @@ import React from 'react'
 import BodyGrandChild from './BodyGrandChild'
 import BodyGrandChildTwo from './BodyGrandChildTwo'
 
-export default function BodyChild({number}){
+export default function BodyChild({counting, setShow, list}){
     //you can destructure it ({number}) or you can do props (props) in the parameter
 
     return(
@@ -12,10 +12,10 @@ export default function BodyChild({number}){
             </div>
             <div className="row">
                 <div className="col-sm-6">
-                    <BodyGrandChild pizza={number}/> {/* You can name the attibute whatever you want */}
+                    <BodyGrandChild counter={counting}/> {/* You can name the attibute whatever you want */}
                 </div>
                 <div className="col-sm-6">
-                    <BodyGrandChildTwo />
+                    <BodyGrandChildTwo setShow={setShow} list={list}/>
                 </div>
             </div>
         </div>
