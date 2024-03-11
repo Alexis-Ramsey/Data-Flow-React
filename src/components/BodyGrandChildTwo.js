@@ -19,7 +19,7 @@ export default function BodyGrandChildTwo({setShow, list}){
     return(
         <div className="container">
             <div className="row">
-                <h4 onClick={() => Showing(setShow)}>I'm the Body Grand Child Two</h4>
+                <h4 onClick={() => Showing(setShow)} className='bodyGrandChildTwo'>I'm the Body Grand Child Two</h4>
                 {listing}
             </div>
         </div>

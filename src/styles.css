@@ -5,3 +5,7 @@
 .notShowing{
     visibility: hidden;
 }
+
+.bodyGrandChildTwo{
+    cursor: pointer;
+}
