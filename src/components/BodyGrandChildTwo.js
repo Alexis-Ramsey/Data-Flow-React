@@ -5,7 +5,7 @@ export default function BodyGrandChildTwo({setShow, list}){
     function Showing(setShow){
         setShow(prevShow => !prevShow)
     }
- console.log(list)
+ 
  
     const listing = list.map(
         (child) =>{
@@ -13,8 +13,6 @@ export default function BodyGrandChildTwo({setShow, list}){
            return <p>{child}</p>             
         }
     )
-
-   console.log(listing)
 
     return(
         <div className="container">
